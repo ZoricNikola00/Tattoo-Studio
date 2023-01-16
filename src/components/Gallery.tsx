@@ -7,9 +7,9 @@ const Gallery = () => {
     const [openSingle,setOpenSingle]=useState(false)
     const [indexPhoto,setIndexPhoto]=useState(0)
   return (
-    <section id='Gallery'>
+    <section id='Gallery' className='w-[80%] mx-auto'>
         <motion.h1 
-        className='w-[80%] mx-auto text-6xl font-bold font-primary'
+        className='text-6xl font-bold font-primary'
         initial={{x:-100,opacity:0}}
         whileInView={{x:0,opacity:100}}
         transition={{duration:1}}
@@ -22,11 +22,11 @@ const Gallery = () => {
             whileInView={{y:0,opacity:100}}
             transition={{duration:1}}
         >
-            {galleryData.map(item=><img key={item.id} src={item.src} onClick={_=>{setOpenSingle(true);setIndexPhoto(item.id)}} className='max-w-[465px]'/>)}
+            {galleryData.map(item=><img key={item.id} src={item.src} onClick={_=>{setOpenSingle(true);setIndexPhoto(item.id)}} className='max-w-[365px] hover:shadow hover:shadow-black cursor-pointer transition duration-500'/>)}
         </motion.div>
         <div className={`fixed w-full h-full top-0 left-0 bg-black/60 ${openSingle?'opacity-100 rounded-lg z-30':'opacity-0 -z-30'} flex justify-center items-center`}>
             <img src={galleryData.find(x=>x.id===indexPhoto)?.src} className='rounded-lg max-w-[400px]'/>
-            <FaTimes className='text-white absolute top-10 right-10 text-[80px]' onClick={_=>setOpenSingle(false)}/>
+            <FaTimes className='text-white absolute top-10 right-10 text-[80px] cursor-pointer' onClick={_=>setOpenSingle(false)}/>
         </div>
     </section>
   )
