@@ -19,13 +19,13 @@ import {
 
 
 export const navData =[ 
-    {id:0, name: 'Home' },
-    {id:1, name: 'About' },
-    {id:2, name: 'Gallery' },
-    {id:3, name: 'Interview' },
-    {id:4, name: 'Articles' },
-    {id:5, name: 'Testimonial' },
-    {id:6, name: 'Contact' },
+    {id:0, name: 'Home' ,offset:0},
+    {id:1, name: 'About' ,offset:0},
+    {id:2, name: 'Gallery' ,offset:-150},
+    {id:3, name: 'Interview' ,offset:0},
+    {id:4, name: 'Articles' ,offset:0},
+    {id:5, name: 'Testimonial' ,offset:0},
+    {id:6, name: 'Contact' ,offset:0},
   ]
 
 export const socialData = [
