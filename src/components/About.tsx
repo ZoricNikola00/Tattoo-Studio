@@ -21,7 +21,7 @@ const About = () => {
             transition={{duration:1}}
         >
             <h1 className='text-[80px] font-primary'>
-                My Story
+                MY STORY
             </h1>
             <div className='p-8 font-primary text-lg'>
                 <p className='mb-2'>'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.'</p>
