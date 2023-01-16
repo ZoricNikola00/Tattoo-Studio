@@ -4,8 +4,8 @@ import {IoMdArrowForward } from 'react-icons/io'
 
 const About = () => {
   return (
-    <section id='About' className='w-full mt-[100px] mb-[500px] md:my-[100px]'>
-        <div className='flex justify-start items-center flex-col md:flex-row w-[80%] mx-auto h-[100vh]'>
+    <section id='About' className='w-full mt-[100px] my-[100px] h-auto'>
+        <div className='flex justify-start items-center flex-col md:flex-row w-[80%] mx-auto '>
         <motion.div             
             initial={{x:-100,opacity:0}}
             whileInView={{x:0,opacity:100}}
