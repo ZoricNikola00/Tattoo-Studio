@@ -5,9 +5,14 @@ import {FaBars} from 'react-icons/fa'
 import {Link} from 'react-scroll'
 const Navbar = () => {
     const [showMenu,setShowMenu]=useState(false)
+    const [scrollHeight,setScrollHeight]=useState(false)
+    window.addEventListener('scroll',()=>{
+        if(window.scrollY>10)setScrollHeight(true)
+        else setScrollHeight(false)
+    })
   return (
-    <nav className='w-full bg-white fixed top-0 right-0'>
-        <div className={`w-[90%] mx-auto p-4 flex justify-between items-center`}>
+    <nav className={`${scrollHeight?'py-2 border-b-gray-600 border-b-2 shadow shadow-gray-600':'py-4 border-white border-b-2'} transition duration-500 w-full bg-white fixed top-0 right-0 z-30`}>
+        <div className='w-[90%] mx-auto px-4 flex justify-between items-center'>
             <img src={logo} className='z-30'/>
             <ul className='hidden md:flex items-center gap-4 text-gray-600 font-semibold text-lg '>
                 {navData.map(item=><li key={item.id} className='hover:border-gray-600 hover:border-b-2 cursor-pointer transition duration-500'><Link to={item.name} smooth={true}>{item.name}</Link></li>)}
