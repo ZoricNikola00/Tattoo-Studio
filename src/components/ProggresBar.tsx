@@ -54,8 +54,8 @@ useEffect(() => {
   return (
     <motion.section
         className='w-[80%] mx-auto font-primary flex justify-between items-center'
-        initial={{x:-100,opacity:0}}
-        whileInView={{x:0,opacity:100}}
+        initial={{y:100,opacity:0}}
+        whileInView={{y:0,opacity:100}}
         transition={{duration:1}}
         ref={ref}
      >
