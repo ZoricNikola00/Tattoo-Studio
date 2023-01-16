@@ -53,7 +53,7 @@ useEffect(() => {
 
   return (
     <motion.section
-        className='w-[80%] mx-auto font-primary flex justify-between items-center'
+        className='w-[80%] mx-auto font-primary flex justify-between items-center my-[200px]'
         initial={{y:100,opacity:0}}
         whileInView={{y:0,opacity:100}}
         transition={{duration:1}}
