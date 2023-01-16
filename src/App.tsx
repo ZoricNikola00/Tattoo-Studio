@@ -3,6 +3,7 @@ import About from './components/About'
 import Gallery from './components/Gallery'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
+import ProggresBar from './components/ProggresBar'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Main/>
         <About/>
         <Gallery/>
+        <ProggresBar/>
     </div>
   )
 }
