@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='w-[90%] mx-auto px-4 flex justify-between items-center'>
             <img src={logo} className='z-30'/>
             <ul className='hidden md:flex items-center gap-4 text-gray-600 font-semibold text-lg '>
-                {navData.map(item=><li key={item.id} className='hover:border-gray-600 hover:border-b-2 cursor-pointer transition duration-500'><Link to={item.name} smooth={true}>{item.name}</Link></li>)}
+                {navData.map(item=><li key={item.id} className='hover:border-gray-600 hover:border-b-2 cursor-pointer transition duration-500'><Link to={item.name} offset={item.offset} smooth={true}>{item.name}</Link></li>)}
             </ul>
             <ul className='hidden md:flex items-center gap-4 text-xl text-gray-600'>
                 {socialData.map(item=><li key={item.id}><a href={item.href} ><item.icon/></a></li>)}
