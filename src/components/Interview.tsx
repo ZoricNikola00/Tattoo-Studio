@@ -16,9 +16,7 @@ const Interview = () => {
                 opts={{      
                 height: window.innerWidth>768?'490':'400',
                 width:window.innerWidth>768?'650':'300',
-                playerVars: {
-                autoplay: 1,
-                },}}
+                }}
             />
         </div>
         <motion.div
