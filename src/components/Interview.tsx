@@ -5,19 +5,20 @@ import YouTube from 'react-youtube';
 
 const Interview = () => {
     const [modal,setModal]=useState(false)
+    console.log(window.innerWidth);
+    
   return (
-    <section className='bg-interview w-full bg-cover bg-center h-[450px] md:h-[810px]'>
+    <section id='Interview' className='bg-interview w-full bg-cover bg-center h-[450px] md:h-[810px]'>
         <div className={`fixed flex justify-center items-center top-0 left-0 w-full h-full bg-black/50 ${modal?'opacity-100 z-30':'opacity-0 -z-30'}`}>
             <FaTimes className='text-white absolute top-10 right-10 text-[80px] cursor-pointer' onClick={_=>setModal(false)}/>
             <YouTube
                 videoId='_l1mqYQuNf8'
                 opts={{      
-                height: '490',
-                width: '640',
+                height: window.innerWidth>768?'490':'400',
+                width:window.innerWidth>768?'650':'300',
                 playerVars: {
                 autoplay: 1,
                 },}}
-                className='outline-none'
             />
         </div>
         <motion.div
