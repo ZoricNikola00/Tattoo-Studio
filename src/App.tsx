@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import About from './components/About'
+import ContactForm from './components/ContactForm'
 import Gallery from './components/Gallery'
 import Interview from './components/Interview'
 import Main from './components/Main'
@@ -19,6 +20,7 @@ function App() {
         <ProggresBar/>
         <Testemonial/>
         <Interview/>
+        <ContactForm/>
     </div>
   )
 }
