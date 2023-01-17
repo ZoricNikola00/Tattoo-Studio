@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import About from './components/About'
 import Gallery from './components/Gallery'
+import Interview from './components/Interview'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
 import ProggresBar from './components/ProggresBar'
@@ -17,6 +18,7 @@ function App() {
         <Gallery/>
         <ProggresBar/>
         <Testemonial/>
+        <Interview/>
     </div>
   )
 }
