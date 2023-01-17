@@ -22,9 +22,9 @@ export const navData =[
     {id:0, name: 'Home' ,offset:0},
     {id:1, name: 'About' ,offset:0},
     {id:2, name: 'Gallery' ,offset:-150},
-    {id:3, name: 'Interview' ,offset:0},
+    {id:3, name: 'Interview' ,offset:-100},
     {id:4, name: 'Articles' ,offset:0},
-    {id:5, name: 'Testimonial' ,offset:0},
+    {id:5, name: 'Testimonial' ,offset:-200},
     {id:6, name: 'Contact' ,offset:0},
   ]
 
@@ -99,10 +99,9 @@ export const testimonialData = [
   },
 ];
 
-export const contactData = {
-  title: 'Get in touch with me:',
-  info: [
+export const contactData = [
     {
+      id:0,
       title: 'LA office',
       subtitle:
         'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
@@ -121,6 +120,7 @@ export const contactData = {
       link: 'Get location',
     },
     {
+      id:1,
       title: 'NYC office',
       subtitle:
         'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
@@ -138,14 +138,7 @@ export const contactData = {
       },
       link: 'Get location',
     },
-  ],
-  form: {
-    name: 'Write your name here',
-    email: 'Write your email address',
-    message: 'Write your messages here',
-    btnText: 'Send it',
-  },
-};
+  ];
 
 export const footerData = {
   about: {
