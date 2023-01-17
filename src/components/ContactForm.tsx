@@ -5,7 +5,12 @@ import { contactData } from '../data';
 const ContactForm = () => {
   return (
     <section id='Contact' className='w-[80%] mx-auto font-primary flex flex-col md:flex-row justify-center items-center gap-4 my-[100px]'>
-            <motion.div className='flex flex-col'>
+            <motion.div 
+                className='flex flex-col'
+                initial={{x:-100,opacity:0}}
+                whileInView={{x:0,opacity:100}}
+                transition={{duration:1}}
+            >
                 <h1 className='text-6xl text-left mb-6'>Get in touch<br className='hidden md:block'/> with me:</h1>
                 <div className='flex flex-col gap-y-6 md:flex-row'>
                     {contactData.map(item=><div key={item.id} className='flex flex-col w-[300px] gap-2'>
@@ -17,7 +22,12 @@ const ContactForm = () => {
                     </div>)}
                 </div>
             </motion.div>
-            <motion.form className='flex flex-col gap-6 w-full md:w-[400px]'>
+            <motion.form 
+                className='flex flex-col gap-6 w-full md:w-[400px]'
+                initial={{x:100,opacity:0}}
+                whileInView={{x:0,opacity:100}}
+                transition={{duration:1}}
+            >
                 <input className='border-b-2 border-gray-600 py-3 text-lg w-full' placeholder='Write your name here'/>
                 <input className='border-b-2 border-gray-600 py-3 text-lg w-full' placeholder='Write your email address'/>
                 <input className='border-b-2 border-gray-600 py-3 text-lg w-full' placeholder='Write your message here'/>
