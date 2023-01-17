@@ -23,9 +23,8 @@ export const navData =[
     {id:1, name: 'About' ,offset:0},
     {id:2, name: 'Gallery' ,offset:-150},
     {id:3, name: 'Interview' ,offset:-100},
-    {id:4, name: 'Articles' ,offset:0},
-    {id:5, name: 'Testimonial' ,offset:-200},
-    {id:6, name: 'Contact' ,offset:0},
+    {id:4, name: 'Testimonial' ,offset:-200},
+    {id:5, name: 'Contact' ,offset:-150},
   ]
 
 export const socialData = [
@@ -161,19 +160,19 @@ export const footerData = {
   links: {
     title: 'Useful links',
     items: [
-      { href: '/', name: 'About me' },
-      { href: '/', name: 'My gallery' },
-      { href: '/', name: 'My services' },
-      { href: '/', name: 'Contact me' },
+      {id:0, href: '/', name: 'About me', },
+      {id:1, href: '/', name: 'My gallery' },
+      {id:2, href: '/', name: 'My services' },
+      {id:3, href: '/', name: 'Contact me' },
     ],
   },
   program: {
     title: 'Working Time',
     items: [
-      { name: 'Mon - Tue / Appointment' },
-      { name: 'Wed - Fri / 10:00 - 9:00pm' },
-      { name: 'Sat / 10:00 - 6:00pm' },
-      { name: 'Sun / no work on this day' },
+      {id:0, name: 'Mon - Tue / Appointment' },
+      {id:1, name: 'Wed - Fri / 10:00 - 9:00pm' },
+      {id:2, name: 'Sat / 10:00 - 6:00pm' },
+      {id:3, name: 'Sun / no work on this day' },
     ],
   },
   newsletter: {
