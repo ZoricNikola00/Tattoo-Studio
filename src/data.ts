@@ -19,11 +19,11 @@ import {
 
 
 export const navData =[ 
-    {id:0, name: 'Home' ,offset:0},
-    {id:1, name: 'About' ,offset:0},
+    {id:0, name: 'Home' ,offset:-80},
+    {id:1, name: 'About' ,offset:-150},
     {id:2, name: 'Gallery' ,offset:-150},
-    {id:3, name: 'Interview' ,offset:-100},
-    {id:4, name: 'Testimonial' ,offset:-200},
+    {id:3, name: 'Testimonial' ,offset:-200},
+    {id:4, name: 'Interview' ,offset:-100},
     {id:5, name: 'Contact' ,offset:-150},
   ]
 
